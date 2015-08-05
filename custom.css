@@ -1,25 +1,75 @@
-/*@media (-webkit-min-device-pixel-ratio: 1.5)
-section#app, section#app-sm {
+@media (-webkit-min-device-pixel-ratio: 1.5)
+section#app, {
 
-  background-size: 100%;
-  background-position: 50%;
-  max-height: 500px !important;
+    background-size: 100%;
+    background-position: 50%;
+    max-height: 500px;
 }
 
 @media (max-width: 768px)
 section#app, section#app-sm {
-  height: 200px !important;
-  background-size: 100%;
-  background-position: 50%;
+    height: 200px !important;
+    background-size: 100%;
+    background-position: 50%;
 }
 
 @media (min-width: 1200px)
 section#app, section#app-sm {
-  background-size: 100%;
-  background-position: 50%;
-  max-height: 500px;
+    background-size: 100%;
+    background-position: 50%;
+    max-height: 500px;
 }
-*/
 
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+.btn {
+    background-color: #AAA;
+    height: 35px;
+    width: 198px;
+    border: none;
+    color: #FFF;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn-primary{
+    background-color: red;
+}
+
+button.btn.primary {
+    margin-right: 11;
+}
+
+
+
+label.booknow {
+    margin-top: 12px;
+    color: rgb(227, 69, 42);
+    margin-right: 0px;
+
+}
+
+label.booknow:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.booknow {
+    margin-top: 15px;
+    text-align: center;
+    width: 350px;
+}
 
 
