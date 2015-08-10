@@ -54,7 +54,7 @@ h5{font-size:1em;color:#000;font-family:"Theinhardt-Bold", helvetica, sans-serif
 
 
 }
-.btnFacebookImg{color:#FFF;background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-bd26d9bf92f2a7b35063c1547b76e4d6.png) center no-repeat;width:25px;height:22px;border:0px;cursor:pointer;-moz-transition-property:background;-o-transition-property:background;-webkit-transition-property:background;transition-property:background;-moz-transition-duration:0.3s;-o-transition-duration:0.3s;-webkit-transition-duration:0.3s;transition-duration:0.3s;-moz-transition-timing-function:ease;-o-transition-timing-function:ease;-webkit-transition-timing-function:ease;transition-timing-function:ease}
+/*.btnFacebookImg{color:#FFF;background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-bd26d9bf92f2a7b35063c1547b76e4d6.png) center no-repeat;width:25px;height:22px;border:0px;cursor:pointer;-moz-transition-property:background;-o-transition-property:background;-webkit-transition-property:background;transition-property:background;-moz-transition-duration:0.3s;-o-transition-duration:0.3s;-webkit-transition-duration:0.3s;transition-duration:0.3s;-moz-transition-timing-function:ease;-o-transition-timing-function:ease;-webkit-transition-timing-function:ease;transition-timing-function:ease}
 .btnFacebookImg:hover{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-hover-42d79254508cc7af42f6bfc0d6b3fe58.png) center no-repeat}
 .btnFacebookImg:active{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-active-45ac0773ca2e901d37d06be16643f38b.png) center no-repeat}
 @media all and (-webkit-min-device-pixel-ratio: 1.5){.btnFacebookImg{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook@2x-ed42399116ea44443c33faf2c1b3095d.png) center no-repeat;background-size:25px 22px}
@@ -73,7 +73,7 @@ h5{font-size:1em;color:#000;font-family:"Theinhardt-Bold", helvetica, sans-serif
 .btnInstagramImg:active{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-active-e5be87ba153170bd64506d6809279d4c.png) center no-repeat}
 @media all and (-webkit-min-device-pixel-ratio: 1.5){.btnInstagramImg{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram@2x-99a6b36c375aeecd6e30bf2d5b53d5bf.png) center no-repeat;background-size:25px 22px}
 .btnInstagramImg:hover{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-hover@2x-98a04517bcb3b113106b21f7850e47d1.png) center no-repeat;background-size:25px 22px}
-.btnInstagramImg:active{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-active@2x-e3d19854bf8c3c041f11c561c65107ff.png) center no-repeat;background-size:25px 22px}
+.btnInstagramImg:active{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-active@2x-e3d19854bf8c3c041f11c561c65107ff.png) center no-repeat;background-size:25px 22px}*/
 }
 .btnPrimary{padding:5px 20px}
 .btnFormSecundary,.btnSecundary,.btnIcon{color:#FFF;background:#f7a61b;width:auto;height:37px;padding:9px 39px;font-size:1.2em;text-transform:uppercase;border:1px solid #f7a61b;cursor:pointer;-moz-transition-property:background;-o-transition-property:background;-webkit-transition-property:background;transition-property:background;-moz-transition-duration:0.3s;-o-transition-duration:0.3s;-webkit-transition-duration:0.3s;transition-duration:0.3s;-moz-transition-timing-function:ease;-o-transition-timing-function:ease;-webkit-transition-timing-function:ease;transition-timing-function:ease}
@@ -168,7 +168,7 @@ section#app-sm,{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/c
 @media (max-width: 768px){section#app .content .intro,section#app-sm .content .intro{display:none}
 }
 section#app .intro,section#app-sm .intro{width:48.73418%;float:left;margin-left:0.63291%;margin-right:0.63291%}
-section#app .intro h1,section#app-sm .intro h1{margin-top:100px;margin-bottom:20px}
+section#app .intro h1,section#app-sm .intro h1{margin-top:50px;margin-bottom:20px}
 section#app .intro h2,section#app-sm .intro h2{margin-top:0px;margin-bottom:20px;font-family:"FaktPro-Light", Helvetica, sans-serif}
 section#app .intro form,section#app-sm .intro form{margin:40px 0px 20px 0px}
 section#app .intro input[type="text"],section#app-sm .intro input[type="text"]{width:200px}
