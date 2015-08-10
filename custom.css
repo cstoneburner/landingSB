@@ -98,4 +98,7 @@ body, html {
     overflow-x: hidden;
 }
 
-
+div.footcontainer {
+    padding-right: 129px;
+    padding-left: 129px;
+}
