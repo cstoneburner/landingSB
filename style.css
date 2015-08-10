@@ -156,7 +156,9 @@ section{margin:0px}
 section header{height:auto;background:none;position:relative;z-index:100;margin-top:0px}
 section header h1{margin-bottom:0px;margin-top:30px}
 section header h4{margin-top:20px;margin-bottom:30px;text-transform:uppercase;font-family:"FaktPro-Normal", Helvetica, sans-serif;font-size:1.2em;letter-spacing:0.01em}
-section#app,section#app-sm{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-hero-face-6897a6f2078e55678fca9ac9d1aa4cf3.jpg) top right no-repeat;height:702px}
+section#app,{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-hero-face-6897a6f2078e55678fca9ac9d1aa4cf3.jpg) top right no-repeat;height:500px}
+section#app-sm,{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-hero-face-6897a6f2078e55678fca9ac9d1aa4cf3.jpg) top right no-repeat;height:250px}
+
 @media all and (-webkit-min-device-pixel-ratio: 1.5){section#app,section#app-sm{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-hero-face@2x-f2159859026e4da9d8cff7cda662cf6b.jpg) top right no-repeat;background-size:100%;background-position:50%}
 }
 @media (min-width: 1200px){section#app,section#app-sm{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-hero-face@2x-f2159859026e4da9d8cff7cda662cf6b.jpg) top right no-repeat;background-size:100%;background-position:50%}
@@ -692,7 +694,7 @@ section#tryit form{width:100%;margin-bottom:10px}
 section#tryit input[type="text"]{width:200px}
 
 section#tryit label{color:#edeff0}
-footer{background:url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-footer-b5b014261ae65dfff13fe4779fcf07a6.png) top left repeat-x;padding-bottom:60px;border-top:1px solid #000;float:left}
+footer{background-color:white; top left repeat-x;padding-bottom:60px;border-top:1px solid #000;float:left}
 footer header{padding:13px 0px;height:30px;background:none;position:relative;margin-top:0px}
 footer header img{float:left}
 @media (max-width: 480px){footer header img{width:146px;margin-top:4px}
