@@ -64,7 +64,7 @@
                     </div>
                         <label>Get a link to download the app</label>
                         <input id="phone" name="phone" placeholder="Your mobile number" type="phone" required/>
-                        <button name="button" class="btn btn-primary" type="submit">GET THE APP</button>
+                        <button id="get-app" name="button" class="btn btn-primary" type="submit">GET THE APP</button>
                         <div id="message"></div>
                         <div class="booknow">
                             <label>OR</label>
@@ -85,16 +85,16 @@
                 <h2>Get blowouts and makeup delivered to your door with the click of an app</h2>
 
                 <div class="x_send_app_link">
-                    <form accept-charset="UTF-8" action="/send_app_link" class="x_send_app_link" data-remote="true" method="post">
+                    <form accept-charset="UTF-8" action="/send_app_link" id="theform" class="x_send_app_link required" data-remote="true" method="post">
 
                         <div style="display:none">
                             <input name="utf8" type="hidden" value="&#x2713;">
                         </div>
                         <label>Get a link to download the app</label>
-                        <input id="phone" name="phone" placeholder="Your mobile number" type="phone" required/>
+                        <input id="phone-sm" name="phone" placeholder="Your mobile number" type="phone" required/>
 
-                        <button name="button" class="btn btn-primary" type="submit">GET THE APP</button>
-                        <div id="message"></div>
+                        <button id="get-app-sm" name="button" class="btn btn-primary" type="submit">GET THE APP</button>
+                        <div id="message-sm"></div>
                         <div class="booknow">
                             <label>OR</label>
                             <a href="https://www.stylebee.com/clients/sign_in"><label class="booknow" style="color: red;width: 385;">Book Now Online</label></a>
@@ -106,50 +106,54 @@
     </section>
 
 
-  <footer style="padding-bottom: 5px; padding-top: 0px">
+      <footer style="padding-bottom: 5px; padding-top: 0px">
 
-    <div class="footercontainer" style="padding-left: 129px; padding-right: 129px;">
-      <header style="padding-bottom: 0px">
-        <img alt="StyleBee" src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-footer-e543da038088d690fff146230a66f162.png"</a>
-        <ul class="socialmedia">
-          <li class="facebook">
-            <a href="https://www.facebook.com/StyleBeeBeauty"><img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-bd26d9bf92f2a7b35063c1547b76e4d6.png"</a>
-          </li>
-          <li class="twitter">
-            <a href="https://twitter.com/StyleBeeBeauty">
-            <img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-twitter-9910e28e9855c907a48274e744e41d03.png"></a>
-          </li>
-          <li class="instagram">
-            <a href="http://instagram.com/stylebee"><img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-3f5b778c57697f2eccdeca32bdf1393b.png"</a>
-          </li>
-        </ul>
-      </header>
-      </div>
-
-        <!-- <nav>
-            <ul>
-                <li>
-                    <a href="/legal/frequently-asked-questions">Faqs</a>
-                </li>
-                <li>
-                    <a href="/safety">Your Safety</a>
-                </li>
-                <li>
-                    <a href="/legal/privacy-policy">Privacy</a>
-                </li>
-                <li>
-                    <a href="/legal/terms-of-service">Terms</a>
-                </li>
-                <li>
-                    <a href="https://partners.stylebee.com/">Become a StyleBee</a>
-                </li>
+        <div class="footercontainer" style="padding-left: 129px; padding-right: 129px;">
+          <header style="padding-bottom: 0px">
+            <img alt="StyleBee" src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-footer-e543da038088d690fff146230a66f162.png"</a>
+            <ul class="socialmedia">
+              <li class="facebook">
+                <a href="https://www.facebook.com/StyleBeeBeauty"><img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-facebook-bd26d9bf92f2a7b35063c1547b76e4d6.png"</a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/StyleBeeBeauty">
+                <img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-twitter-9910e28e9855c907a48274e744e41d03.png"></a>
+              </li>
+              <li class="instagram">
+                <a href="http://instagram.com/stylebee"><img src="https://ddorzr2nptqu6.cloudfront.net/assets/new/client/logo-instagram-3f5b778c57697f2eccdeca32bdf1393b.png"</a>
+              </li>
             </ul>
-            <p>&copy; 2014 ASCN, Inc.</p>
-        </nav>
-    </div> -->
-  </footer>
+          </header>
+        </div>
+    </footer>
 
-<script src="https://ddorzr2nptqu6.cloudfront.net/assets/new/home-c866efef3bb7a37407ff36be583dfc0c.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(document).ready(function(){
+            $("#get-app").click(function(e) {
+                e.preventDefault()
+                if (validatePhone($("#phone").val())){
+                    //Insert a message that's positive into #message
+                } else {
+                    $("#message").text("Please enter a valid phone number");
+                }
+            })
+        });
+         $(document).ready(function(){
+            $("#get-app-sm").click(function(e) {
+                e.preventDefault()
+                if (validatePhone($("#phone-sm").val())){
+                    //Insert a message that's positive into #message
+                } else {
+                    $("#message-sm").text("Please enter a valid phone number");
+                }
+            })
+        });
+        function validatePhone(phoneNumber){
+            var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+            return phoneNumberPattern.test(phoneNumber);
+        }
+    </script>
 
 </body>
 </html>
